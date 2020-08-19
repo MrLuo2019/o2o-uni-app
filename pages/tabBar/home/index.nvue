@@ -1,0 +1,55 @@
+<template>
+	<view class="uni-container">
+		<!-- banner start -->
+		<view class="uni-banner">
+			<uni-banner :bannerListDatas="bannerListDatas"></uni-banner>
+		</view>
+		<!-- banner end -->
+
+		<!-- category start -->
+		<view class="uni-category">
+			<uni-category></uni-category>
+		</view>
+		<!-- category end -->
+	</view>
+</template>
+
+<script>
+import uniBanner from './components/banner.nvue';
+import uniCategory from './components/category.nvue';
+
+export default {
+	data() {
+		return {
+			bannerListDatas: [
+				{
+					id: 0,
+					imgUrls: ''
+				},{
+					id: 1,
+					imgUrls: ''
+				},{
+					id: 2,
+					imgUrls: ''
+				}
+			]
+		};
+	},
+	components: {
+		uniBanner,
+		uniCategory
+	},
+	methods: {}
+};
+</script>
+
+<style lang="scss" scoped>
+.uni-container {
+	.uni-banner {
+		padding: 20rpx 30rpx;
+	}
+	.uni-category {
+		padding: 20rpx 30rpx;
+	}
+}
+</style>

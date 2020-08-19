@@ -1,0 +1,38 @@
+<template>
+	<view class="uni-container">
+		<view class="list">
+			<view class="item" v-for="(item, index) in 10" :key="index">
+				<view class="uni-icon">
+					
+				</view>
+				<view class="text">文字</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+export default {
+	data() {
+		return {};
+	},
+	methods: {}
+};
+</script>
+
+<style lang="scss" scoped>
+.uni-container {
+	border-radius: 10rpx;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 10rpx rgba($color: #000000, $alpha: 0.5);
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		.item {
+			width: 20%;
+			text-align: center;
+		}
+	}
+}
+</style>
